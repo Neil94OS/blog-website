@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<%- include('../partials/head'); %>
+<body>
+<%- include('../partials/header'); %>
+<form action="/newBlog" method="post" name="form1" enctype="application/x-www-form-urlencoded">
+    <div class="form-group">
+        <label for="Creator ID">Creator ID (Integer Only): </label>
+        <input type="text" class="form-control" name="creator" id="creator" value="" placeholder="Creator">
+    </div>
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" name="title" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter title" value="">
+    </div>
+    <div class="form-group">
+        <label for="Content">Content</label>
+        <input type="text" name="content" class="form-control" id="content" aria-describedby="emailHelp" placeholder="Enter Content" value="">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Add">
+</form>
+<%- include('../partials/footer'); %>
+</body>
+</html>

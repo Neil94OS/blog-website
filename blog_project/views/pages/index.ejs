@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head'); %>
+<body>
+<%- include('../partials/header'); %>
+<div class="app-main">
+    <section class="jumbotron text-center home-page-container">
+        <div class="container">
+                    <h1 class="jumbotron-heading">Welcome To Neils Blog Page</h1>
+            </div>
+    </section>
+
+    <div class="d-flex justify-content-around">
+        <div class="card link-page-card">
+            <img src="/images/createBlog.jpg" class="card-img-top home-img" alt="Create Blog">
+            <div class="card-body">
+                <h5 class="card-title">Create a Blog</h5>
+                <p class="card-text">Fact or Fiction create your own personal blog here.</p>
+                <a href="/newBlog" class="btn btn-primary">Create</a>
+            </div>
+        </div>
+        <div class="card link-page-card">
+            <img src="/images/modify.png" class="card-img-top home-img" alt="modify">
+            <div class="card-body">
+                <h5 class="card-title">Modify A Blog</h5>
+                <p class="card-text">Modify any existing blogs right here.</p>
+                <a href="/modifyBlog" class="btn btn-primary">Modify</a>
+            </div>
+        </div>
+        <div class="card link-page-card">
+            <img src="/images/blogLaptop.jpg" class="card-img-top home-img" alt="Display Blogs">
+            <div class="card-body">
+                <h5 class="card-title">View blogs</h5>
+                <p class="card-text">Click here to read the blogs available now.</p>
+                <a href="/displayBlogs" class="btn btn-primary">Read blogs now</a>
+            </div>
+        </div>
+        <div class="card link-page-card">
+            <img src="/images/search.jpg" class="card-img-top home-img" alt="search">
+            <div class="card-body">
+                <h5 class="card-title">Search blog content</h5>
+                <p class="card-text">Search existing blogs for something specific.</p>
+                <a href="/searchBlog" class="btn btn-primary">Search</a>
+            </div>
+        </div>
+        <div class="card link-page-card">
+            <img src="/images/help.jfif" class="card-img-top home-img" alt="help">
+            <div class="card-body">
+                <h5 class="card-title">Help Center</h5>
+                <p class="card-text">Do you need any help? Click here if you do.</p>
+                <a href="/help" class="btn btn-primary">Help Center </a>
+            </div>
+        </div>
+        <div class="card link-page-card">
+            <img src="/images/about.jfif" class="card-img-top home-img" alt="about">
+            <div class="card-body">
+                <h5 class="card-title">About</h5>
+                <p class="card-text">For information about us click here.</p>
+                <a href="/about" class="btn btn-primary">About</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<%- include('../partials/footer'); %>
+</body>
+</html>
