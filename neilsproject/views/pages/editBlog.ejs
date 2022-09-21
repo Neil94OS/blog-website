@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head'); %>
+<body>
+<%- include('../partials/header'); %>
+<div class="app-main">
+    <form autocomplete="off" action="/admin/edit/<%= blog.blogid %>" method="post">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card shadow-lg border-0 rounded-lg mt-5">
+                        <div class="card-header"><h3 class="text-center font-weight-light my-4">Update Blog ID:<%= blog.blogid %> </h3></div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>New Creator ID:</label>
+                                            <input type="creator" autofocus class="form-control" name="creator" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Change Title:</label>
+                                            <input type="title" autofocus class="form-control" name="title" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Change Content:</label>
+                                            <input type="content" autofocus class="form-control" name="content" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="submit" value="Update" class="btn btn-default btn-warning" />
+                                    <a href="/admin" class="btn btn-outline-dark cancel">Cancel</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<%- include('../partials/footer'); %>
+</html>
